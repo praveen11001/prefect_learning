@@ -1,0 +1,16 @@
+@flow - for running some script given a certain names
+@task - always use inside a flow for modulation and clearity
+subflow- a flow inside flow for modularity and other multipurpose
+deployment- for working with org./team to work on same thing for faster production
+cmd> prefect deployment build hello.py:hello_world -n demo_deployment
+    >prefect deployment build file_name:flow_name -n(for giving deployment a name) name_of_deployment
+    >prefect deployment apply hello_world-deployment.yaml 
+    #what is created after running deployment    
+
+Now we have agent for constantly looking for work(flow) to be done
+because b/w infrasturcture and prefect API deployment needs someone to tell infrasturcture to run what is ready to be run.
+#intermediatery
+cmd>prefect agent start -q 'default' 
+    #to run prefect agent
+
+BLOCKS - securely stored credentials and configuration and manage can them in gui 
